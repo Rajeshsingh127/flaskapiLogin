@@ -9,8 +9,11 @@ Basic flask login signup system using flask to create API endpoints
     - [Signup endpoint](#signup-endpoint)
 
 ## Database Structure 
-- Main component of Database are:
-  1. A User Table which stores user Info
+  1. A User Table which stores user Info:
+     - id ```primary key```
+     - username ```unique```
+     - password ```hashed password```
+     - email ```unique email```
 
 ## API Endpoints
 ### Login Endpoint
