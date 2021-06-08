@@ -11,7 +11,11 @@ def create_user():
         user =  User(username=data["username"],password = hashed_password,email = data["email"])
         db.session.add(user)
         db.session.commit()
-        return jsonify({"message": "user has been created"})
+        return jsonify(message = "user has been created",
+                       id = user.id,
+                       username = user.username,
+                       email = user.email,
+                        )
     except:
         return jsonify({"message": "Username or email is taken"})
 
