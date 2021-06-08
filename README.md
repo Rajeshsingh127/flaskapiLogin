@@ -20,7 +20,7 @@ Basic flask login signup system using flask to create API endpoints
 POST request to the ```http://127.0.0.1:5000/login/``` endpoint with username and password field in json format. 
 ```
 {
-      "message": "welcome",
+      "message": "user created",
       "username": "rajesh",
       "email": "rajesh@gmail.com"
 
